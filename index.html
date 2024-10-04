@@ -6,7 +6,7 @@
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="-1" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=<?php echo time(); ?>">
     <title>IP-CHECKS-SERVICE</title>
 </head>
 <body>
@@ -35,15 +35,3 @@
     </div>
 </body>
 </html>
-<script type="text/javascript">
-    if(document.createStyleSheet) {
-      document.createStyleSheet('css/style.css');
-    }
-    else {
-      var styles = "@import url('css/style.css');";
-      var newSS=document.createElement('link');
-      newSS.rel='stylesheet';
-      newSS.href='data:text/css,'+escape(styles);
-      document.getElementsByTagName("head")[0].appendChild(newSS);
-    }
-</script>
