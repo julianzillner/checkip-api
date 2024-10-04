@@ -18,6 +18,36 @@ body {
     margin: 25px;
 }
 
+.import-box{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.import-box a{
+    color: #20C20E;
+    text-decoration: none;
+}
+
+.output-box {
+    background-color: black;
+    padding: 10px;
+    margin-top: 25px;
+    color: white;
+    height: 150px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.output-box a {
+    text-decoration: none;
+    color: white
+}
+    
+
 .footer {
     display: flex;
     align-items: center;
