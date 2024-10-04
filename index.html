@@ -6,8 +6,14 @@
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="-1" />
-    <link rel="stylesheet" type="text/css" href="css/style.css?v=<?php echo time(); ?>">
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="css/style.css">
     <title>IP-CHECKS-SERVICE</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var stylesheet = document.getElementById("stylesheet");
+            stylesheet.href = stylesheet.href + "?v=" + new Date().getTime();
+        });
+    </script>
 </head>
 <body>
     <div class="header">
@@ -18,17 +24,17 @@
             <h3>Installation:</h3>
             <p>~$ git clone <a href="https://github.com/julianzillner/checkip-api.git">https://github.com/julianzillner/checkip-api.git</a></p>
         </div>
-            <div class="output-box">
-                <h3>Outputs</h3>
-                <ul>
-                    <li><a style="color: #20C20E;" href="/output/page">Default Output</a></li>
-                    <li><a style="color: #20C20E;" href="/output/json">Json Output</a></li>
-                </ul>
-                <h3>Requirements</h3>
-                <ul>
-                    <li><a href="/output/page">PHP supported Webserver</a></li>
-                </ul>
-            </div>
+        <div class="output-box">
+            <h3>Outputs</h3>
+            <ul>
+                <li><a style="color: #20C20E;" href="/output/page">Default Output</a></li>
+                <li><a style="color: #20C20E;" href="/output/json">Json Output</a></li>
+            </ul>
+            <h3>Requirements</h3>
+            <ul>
+                <li><a href="/output/page">PHP supported Webserver</a></li>
+            </ul>
+        </div>
     </div>
     <div class="footer">
         <h3>Project at <a href="https://github.com/julianzillner/checkip-api">Github.com</a></h3>
